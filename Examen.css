@@ -1,0 +1,116 @@
+body, html {
+  height: 100%;
+  margin: 0;
+  font: 400 15px/1.8 "Lato", sans-serif;
+  color: #777;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    background-color: #111;
+}
+
+.active {
+    background-color: #4CAF50;
+}
+
+.div1 { grid-area: 1 / 1 / 2 / 7; }
+.div2 { grid-area: 6 / 1 / 7 / 7; }
+
+.div1{
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  background-color: purple;
+  background-image: linear-gradient(to right, white, #74FCE2);
+    border-radius: 10px;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+}
+.div2{
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  background-color: purple;
+  background-image: linear-gradient(to right, white, #74FCE2);
+    border-radius: 10px;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+}
+
+.bgimg-1, .bgimg-2, .bgimg-3 {
+  position: relative;
+  opacity: 0.65;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+.bgimg-1 {
+  background-image: url("https://www.senditur.com/multimedia/uploads/images/Localidades/Espa%C3%B1a/Castilla%20y%20Le%C3%B3n/Salamanca/La%20Alberca/La-Alberca.jpg");
+  min-height: 100%;
+}
+
+.bgimg-2 {
+  background-image: url("https://www.lospueblosmasbonitosdeespana.org/media/resize/imagenes/800/536/1/media-galerias-3-3-e6-33e62d6824c768959cb9509ff77e57df.jpg");
+  min-height: 400px;
+}
+
+.bgimg-3 {
+  background-image: url("https://www.viajaporlibre.com/wp-content/uploads/2016/04/La-Alberca21-768x512.jpg");
+  min-height: 400px;
+}
+
+.caption {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  color: #000;
+}
+
+.caption span.border {
+  background-color: #111;
+  color: #fff;
+  padding: 18px;
+  font-size: 25px;
+  letter-spacing: 10px;
+}
+
+h3 {
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  font: 20px "Lato", sans-serif;
+  color: #111;
+}
+
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1024px) {
+  .bgimg-1, .bgimg-2, .bgimg-3 {
+    background-attachment: scroll;
+  }
+}
+
